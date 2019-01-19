@@ -19,14 +19,22 @@ public class NoteButton : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("hi");
+        Debug.Log("Note Enter");
         if (other.gameObject.name == "Note(Clone)") {
             isActive = true;
         }
     }
 
+    private void OnTriggerStay(Collider other) {
+        if(Input.GetButtonDown("Fire2"))
+        {
+            Debug.Log("Hit");
+            Destroy(other.gameObject);
+        }
+    }
+
     private void OnTriggerExit(Collider other) {
-        Debug.Log("bye");
+        Debug.Log("Note Exit");
         if (other.gameObject.name == "Note(Clone)") {
             isActive = false;
         }
