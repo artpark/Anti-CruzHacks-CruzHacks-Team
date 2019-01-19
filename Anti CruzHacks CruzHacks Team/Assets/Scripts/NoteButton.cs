@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class NoteButton : MonoBehaviour
@@ -26,10 +27,24 @@ public class NoteButton : MonoBehaviour
     }
 
     private void OnTriggerStay(Collider other) {
-        if(Input.GetButtonDown("Fire2"))
-        {
+        if(Input.GetButtonDown("Fire2")) {
             Debug.Log("Hit");
             Destroy(other.gameObject);
+        }
+
+        if(Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if(touch.phase == TouchPhase.Began)
+            {
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(touch.position);
+
+                if(Physics.Raycast(ray, out hit)) {
+                    Debug.Log("Hit");
+                    Destroy(other.gameObject);
+                }
+            }
         }
     }
 
