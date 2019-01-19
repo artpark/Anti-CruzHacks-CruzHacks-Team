@@ -37,20 +37,11 @@ public class NoteButton : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             if(touch.phase == TouchPhase.Began)
             {
-                // Vector3 wp = Camera.main.ScreenToWorldPoint(touch.position);
-                // Vector2 touchPos = new Vector2(wp.x, wp.y);
-                // Collider2D hit = Physics2D.OverlapPoint(touchPos);
-      
-                // if(hit && hit == gameObject.GetComponent<Collider2D>())
-                // {
-                //     Debug.Log("Hit");
-                //     Destroy(other.gameObject);
-                // }
                 RaycastHit hit;
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
 
                 if(Physics.Raycast(ray, out hit)) {
-                    if(hit.collider.name == 
+                    if(hit.collider.name == "Bar 1 Hit Spot")
                     {
                         Debug.Log("Hit");
                         Destroy(other.gameObject);
