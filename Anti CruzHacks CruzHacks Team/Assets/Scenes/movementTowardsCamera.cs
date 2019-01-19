@@ -50,8 +50,8 @@ public class movementTowardsCamera : MonoBehaviour
         spherePosition = new Vector3(xMovePosition, yMovePosition, zMovePosition);
         transform.position = spherePosition;
 
-        //Touch touch = new Touch();
-        //print(touch.position);
+        Touch touch = Input.GetTouch(0);
+        print(touch.position);
         if (isWin())
         {
             print("winner winner chicken dinner");
