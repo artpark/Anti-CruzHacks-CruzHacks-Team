@@ -6,20 +6,21 @@ using UnityEngine;
 public class note_collision : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
 
-    private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.name == "note") {
-            Destroy(collision.gameObject);
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.name == "note") 
+        {
+            Destroy(other.gameObject);
         }
     }
 }

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\asd.cs" />
     <Compile Include="Assets\movement.cs" />
+    <Compile Include="Assets\note_button.cs" />
     <Compile Include="Assets\note_collision.cs" />
     <Compile Include="Assets\Scenes\NewBehaviourScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
