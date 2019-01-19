@@ -5,7 +5,6 @@ using UnityEngine;
 public class asd : MonoBehaviour
 {
     public float speed = 6.0f;
-    public float jumpSpeed = 8.0f;
     private Vector3 moveDirection = Vector2.zero;
     public float gravity = 20.0f;
     CharacterController controller;
@@ -25,15 +24,11 @@ public class asd : MonoBehaviour
              moveDirection = transform.TransformDirection(moveDirection);
              //Multiply it by speed.
              moveDirection *= speed;
-             //Jumping
-             if (Input.GetButton("Jump"))
-                 moveDirection.y = jumpSpeed;
-             
          }
         //Applying gravity to the controller
         //moveDirection.z -= gravity * Time.deltaTime;
         moveDirection.z -= 0.1f;
          //Making the character move
-        controller.Move(moveDirection * Time.deltaTime);
+        controller.Move(moveDirection * 0.1f);
     }
 }
