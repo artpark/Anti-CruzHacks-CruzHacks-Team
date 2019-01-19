@@ -30,9 +30,10 @@ public class asd : MonoBehaviour
                  moveDirection.y = jumpSpeed;
              
          }
-         //Applying gravity to the controller
-         moveDirection.z -= gravity * Time.deltaTime;
+        //Applying gravity to the controller
+        //moveDirection.z -= gravity * Time.deltaTime;
+        moveDirection.z -= 0.1f;
          //Making the character move
-         controller.Move(moveDirection * Time.deltaTime);
+        controller.Move(moveDirection * Time.deltaTime);
     }
 }
