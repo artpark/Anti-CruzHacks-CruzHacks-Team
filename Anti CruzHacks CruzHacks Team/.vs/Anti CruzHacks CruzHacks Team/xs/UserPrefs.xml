@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{E08668F5-C68E-69A6-65F4-627623DDC922}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/asd.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/note_collision.cs">
     <Files>
-      <File FileName="Assets/Scenes/NewBehaviourScript.cs" Line="9" Column="13" />
-      <File FileName="Assets/asd.cs" Line="7" Column="18" />
+      <File FileName="Assets/asd.cs" Line="35" Column="31" />
+      <File FileName="Assets/note_collision.cs" Line="23" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
