@@ -35,7 +35,14 @@ public class movementTowardsCamera : MonoBehaviour
     {
         Instantiate(prefab, new Vector3(xOriginalPosition, yOriginalPosition, zOriginalPosition), Quaternion.identity);
     }
-
+    public bool isLoss()
+    {
+        return Input.GetButtonDown("Fire1") && (yMovePosition <= -3.5 || yMovePosition >= -2.5);
+    }
+    public bool isWin()
+    {
+        return Input.GetButtonDown("Fire1") && yMovePosition >= -3.5 && yMovePosition <= -2.5;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -45,14 +52,14 @@ public class movementTowardsCamera : MonoBehaviour
 
         //Touch touch = new Touch();
         //print(touch.position);
-        if (Input.GetButtonDown("Fire1") && yMovePosition >= -3.5 && yMovePosition <= -2.5)
+        if (isWin())
         {
             print("winner winner chicken dinner");
             makeNew();
             Destroy(this.gameObject);
         }
 
-        if (Input.GetButtonDown("Fire1") && (yMovePosition <= -3.5 || yMovePosition >= -2.5))
+        if (isLoss())
         {
             print("loser loser you're a loser");
             makeNew();
