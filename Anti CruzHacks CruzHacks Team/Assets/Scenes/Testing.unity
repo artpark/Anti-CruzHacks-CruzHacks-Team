@@ -478,7 +478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   note: {fileID: 4337136179065493038, guid: a478ea750c7059749a55272fbd4b4ae4, type: 3}
-  noteSpawn: {fileID: 0}
+  noteSpawn: {fileID: 3475542733028748043, guid: a478ea750c7059749a55272fbd4b4ae4,
+    type: 3}
   coordinates: {fileID: 1595278223}
 --- !u!1 &1322701316
 GameObject:
