@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_2;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_2;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -53,24 +53,105 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo CatchMusic\Script\Collide.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo CatchMusic\Script\MusicView.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo CatchMusic\Script\NoteView.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\Cadence.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\InfinityMusic.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\MathMotifNote.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\SaveLoad.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\ScaleDefinition.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\UtCadence.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\UtComponent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\UtMathMotif.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Demo InfinityMusic\Script\UtModifier.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\CustomStyle.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\FlyingCamera.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\FlythroughCameraController.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\GoMainMenu.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\GUISelectSoundFont.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\HelperNote.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\iTween.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\LookPoint.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\LookTarget.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\MovePoint.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\SceneHandler.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\TestMidiFilePlayerScripting.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\Others Demos\Script\TestMidiStream.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\TestEffects\CustomFilterNoisy.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\TestEffects\CustomFilterSin.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\TestEffects\CustomFilterWhite.cs" />
+     <Compile Include="Assets\MidiPlayer\Scenes For Demo\TestEffects\TestEffect.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKGameObject\MidiFilePlayer.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKGameObject\MidiPlayer.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKGameObject\MidiPlayerGlobal.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKGameObject\MidiStreamPlayer.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKGameObject\MPTKNote.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKMidi\MidiLoad.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKMidi\MidiNote.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKMidi\MidiScan.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKMidi\MidiSet.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKSoundFont\ImSoundFont.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKUtil\BuilderInfo.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKUtil\DicAudioClip.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKUtil\HelperNote.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\MPTKUtil\PopupSelectPatch.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\ChannelAfterTouchEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\ControlChangeEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\KeySignatureEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MergeSort.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MetaEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MetaEventType.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiCommandCode.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiController.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiEventCollection.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiEventComparer.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiFile.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiInMessageEventArgs.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\MidiMessage.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\NoteEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\NoteOnEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\PatchChangeEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\PitchWheelChangeEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\RawMetaEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\SequencerSpecificEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\SmpteOffsetEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\SysexEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\TempoEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\TextEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\TimeSignatureEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Midi\TrackSequenceNumberEvent.cs" />
+     <Compile Include="Assets\MidiPlayer\Scripts\NAudio Utils\ByteEncoding.cs" />
+     <Compile Include="Assets\MidiPlayer\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\NetMenu.cs" />
      <Compile Include="Assets\Scripts\Note.cs" />
      <Compile Include="Assets\Scripts\NoteBoardEndCollision.cs" />
      <Compile Include="Assets\Scripts\NoteButton.cs" />
+     <Compile Include="Assets\Scripts\NoteGenerator.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\MidiPlayer\Resources\SongDB\Hummm.txt" />
+     <None Include="Assets\MidiPlayer\Resources\SoundfontsDB\GeneralUser_GS_SoftSynth_v144\GeneralUser_GS_SoftSynth_v144.txt" />
+     <None Include="Assets\MidiPlayer\Resources\SongDB\saxy.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\MidiPlayer\Resources\SongDB\Marimba.txt" />
+     <None Include="Assets\MidiPlayer\Resources\SongDB\BasicPiano.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\MidiPlayer\Resources\MidiSet.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\MidiPlayer\Scripts\NAudio License.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\scrol.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\MidiPlayer\Scripts\NAudio Midi\NAudio License.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
