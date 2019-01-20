@@ -18,10 +18,10 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.frameCount % 60 == 0)
+        if(Time.frameCount % 45 == 0)
         {
             Debug.Log("New note created");
-            NewNote(6);
+            NewNote(10);
             //Destroy (newNote, 5f);            
         }
         // if(Input.touchCount > 0)

@@ -30,6 +30,7 @@ public class NoteButton : MonoBehaviour
         if(Input.GetButtonDown("Fire2")) {
             Debug.Log("Hit");
             Destroy(other.gameObject);
+            //other.GetComponent<Rigidbody>().velocity = other.transform.forward * 0;
         }
 
         if(Input.touchCount > 0)

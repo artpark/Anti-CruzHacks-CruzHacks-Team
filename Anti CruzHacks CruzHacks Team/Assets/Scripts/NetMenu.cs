@@ -3,39 +3,29 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class NetMenu : MonoBehaviour {
-    public int state = 0;
-	public string serverIP = "ipaddress";
+	private GUIStyle guiStyle = new GUIStyle();
+    private int state = 0;
+	public string serverIP = "IP Address";
 	string myIP;
-	string hostString = "Hosting server on ";
+	public string hostString = "Hosting server on ";
     NetworkClient myClient;
-	string pingString = "Ping: ";
+	public string pingString = "Ping: ";
 	private int currentPing;
-	
+	//public Button S;
+	//public Button C;
 	void Start()
 	{
+		//S = GetComponent<Button>();
+		//C = GetComponent<Button>();
+		
 		myIP = GetLocalIPAddress();
 		this.StartCoroutine(PingUpdate());
 	}
     void Update () 
     {
-        if (state == 0)
-        {
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                SetupServer();
-            }
-            if (Input.GetKeyDown(KeyCode.C))
-            {
-                SetupClient();
-            }
-            if (Input.GetKeyDown(KeyCode.B))
-            {
-                SetupServer();
-                SetupLocalClient();
-            }
-        }
 		if(state == 2)
 		{
 			StartCoroutine (PingUpdate());			
@@ -43,22 +33,23 @@ public class NetMenu : MonoBehaviour {
 	}
     void OnGUI()
     {
+		guiStyle.fontSize = 20; //change the font size
+		guiStyle.normal.textColor = Color.white;
         if (state == 0)
         {
-            GUI.Label(new Rect(180, 210, 150, 100), "Press S for server");     
-            GUI.Label(new Rect(180, 230, 150, 100), "Press B for both");       
-            GUI.Label(new Rect(180, 250, 150, 100), "Press C for client");
-			serverIP = GUI.TextField(new Rect(180, 270, 150, 20), serverIP, 25);
+            if(GUI.Button(new Rect(180, 180, 150, 25), "Host", guiStyle)){ SetupServer(); }
+			if(GUI.Button(new Rect(180, 230, 75, 25), "Join", guiStyle)){ SetupClient(); }
+			serverIP = GUI.TextField(new Rect(250, 230, 150, 20), serverIP, 25);
 			
         }
 		 if (state == 1)
 		 {
-			 GUI.Label(new Rect(180, 230, 150, 100), String.Concat(hostString, myIP));     
+			 GUI.Label(new Rect(180, 230, 150, 100), String.Concat(hostString, myIP), guiStyle);     
 		 }
 		 if (state == 2)
 		 {
-			GUI.Label(new Rect(180, 230, 150, 100), "Connected to server.");
-			GUI.Label(new Rect(180, 250, 150, 100), String.Concat(pingString, currentPing.ToString())); 
+			GUI.Label(new Rect(180, 230, 150, 100), "Connected to server.", guiStyle);
+			GUI.Label(new Rect(180, 250, 150, 100), String.Concat(pingString, currentPing.ToString()), guiStyle); 
 		 }
     }  
 // Create a server and listen on a port
@@ -116,5 +107,7 @@ public class NetMenu : MonoBehaviour {
 
         throw new System.Exception("No network adapters with an IPv4 address in the system!");
     }
+	public void serverEvent(){ SetupServer();}
+	public void clientEvent(){ SetupClient();}
 }
 
